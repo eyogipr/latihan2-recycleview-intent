@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_detail"
+    android:weightSum="100">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:id="@+id/pic"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/bg_linear_detail"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="11sp"
+        android:layout_marginLeft="20dp"
+        android:text="Nama Mahasiswa"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pic_desc"
+        android:layout_gravity="center_horizontal"
+        android:text="Nama"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <View
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp"
+        android:background="#7E7575" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:background="@drawable/bg_linear_detail">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nemm"
+        android:text="Nomor Induk Mahasiswa"
+        android:paddingTop="5dp"
+        android:textSize="11sp"
+        android:paddingLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM"
+            android:id="@+id/nimm"
+            android:paddingLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:background="@drawable/bg_linear_detail">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:id="@+id/iconsz"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp">
+        </ImageView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notelp"
+            android:text="Nomor Telepon"
+            android:paddingTop="7dp"
+            android:textSize="11sp"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOHP"
+            android:id="@+id/nohp"
+            android:paddingLeft="15dp"
+
+            android:textSize="18sp"
+            android:textColor="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

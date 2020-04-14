@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="5dp"
+    android:id="@+id/parent_layout">
+
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/pic"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Mahasiswa"
+        android:id="@+id/pic_nama"
+        android:layout_toRightOf="@+id/pic"
+        android:textColor="#000"
+
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Induk Mahasiswa"
+        android:id="@+id/nim"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_below="@id/pic_nama"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Induk "
+        android:id="@+id/nohp"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_below="@id/nim"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+        />
+    <View
+        android:layout_below="@+id/nim"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#7E7575" />
+
+</RelativeLayout>
